@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.list__caption {
+    margin: 20px;
+    width: calc(25% - 40px);
+    margin: 20px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #0747a6;
+}
+
+.list__cell {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+    min-height: 150px;
+    list-style-type: none;
+    box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.2);
+    border-color: #f0f2f5;
+    overflow: hidden;
+}
+
+.list__card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100%;
+    cursor: all-scroll;
+}
+
+.list__card-header {
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: #0747a6;
+    color: white;
+}
+
+.list__card-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    background-color: #d1d8e2;
+}
